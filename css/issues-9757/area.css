@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+svg {
+    background: #2062f2;
+}
+
+.axis text {
+    font: 10px Arial;
+    fill: #fff;
+    fill-opacity: 0.5;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #3872f2;
+    shape-rendering: crispEdges;
+}
+
+.area {
+    stroke: #35cbe0;
+    fill: rgba(53, 203, 224, 0.4);
+}

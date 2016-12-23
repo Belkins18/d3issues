@@ -1,14 +1,14 @@
 // Система отступов для d3
 var margin = {top: 50, right: 30, bottom: 30, left: 30};
-var width = screen.width - (margin.left + margin.right);
-if ( (screen.width / 1.2) < screen.height ){
-    var height = (screen.width / 1.2) - (margin.top + margin.bottom);
-} else {
-    var height = (screen.height) - (margin.top + margin.bottom);
-}
+// var width = screen.width - (margin.left + margin.right);
+// if ( (screen.width / 1.2) < screen.height ){
+//     var height = (screen.width / 1.2) - (margin.top + margin.bottom);
+// } else {
+//     var height = (screen.height) - (margin.top + margin.bottom);
+// }
 
-// var width = 800 - margin.left - margin.right;
-// var height = 700 - margin.top - margin.bottom;
+var width = 600 - margin.left - margin.right;
+var height = 400 - margin.top - margin.bottom;
 
 
 var svg_wraper = d3.select(".chart-wrapper")
