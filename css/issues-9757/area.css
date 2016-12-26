@@ -18,6 +18,12 @@ svg {
     shape-rendering: crispEdges;
 }
 
+.grid-line {
+    stroke: #3872f2;
+    shape-rendering: crispedges;
+    stroke-opacity: 0.2;
+}
+
 .area {
     stroke: #35cbe0;
     fill: rgba(53, 203, 224, 0.4);
