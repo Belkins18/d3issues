@@ -79,7 +79,7 @@ d3.csv("../data/sp500.csv", type, function(error, data) {
 
   // diapazon scale
   const d0 = new Date(2004, 0, 1),
-      d1 = new Date(2004, 5, 1);
+        d1 = new Date(2004, 5, 1);
 
   // Gratuitous intro zoom!
   svg.call(zoom).transition()
