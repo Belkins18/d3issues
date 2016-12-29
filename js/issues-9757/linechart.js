@@ -27,7 +27,7 @@ var svg = d3.select("#chart-linechart")
 // Данные для чарта
 var usdData = [
         {date: new Date(2016, 12, 22), rate: 26.4},
-        {date: new Date(2016, 12, 23), rate: 26.35},
+        {date: new Date(2016, 12, 23), rate: 29.2},
         {date: new Date(2016, 12, 24), rate: 26.4},
         {date: new Date(2016, 12, 25), rate: 26.45},
         {date: new Date(2016, 12, 26), rate: 26.3},
@@ -37,7 +37,7 @@ var usdData = [
 var eurData = [
         {date: new Date(2016, 12, 22), rate: 28.2},
         {date: new Date(2016, 12, 23), rate: 28.3},
-        {date: new Date(2016, 12, 24), rate: 28.46},
+        {date: new Date(2016, 12, 24), rate: 29.46},
         {date: new Date(2016, 12, 25), rate: 27.95},
         {date: new Date(2016, 12, 26), rate: 27.90},
         {date: new Date(2016, 12, 27), rate: 27.9},
@@ -194,13 +194,13 @@ function createChart (data, colorStroke, label){
         .on('mouseover', function(d){
             d3.select(this)
               .transition()
-              .duration(500)
+              .duration(100)
               .attr("cursor", "pointer")
               .style("stroke", "#ffffff")
 
             d3.select('.tooltip')
               .transition()
-              .duration(500)
+              .duration(100)
               .style('top', ''+ ( scaleY(d.rate)) + 'px')
               .style('left', ''+ ( scaleX(d.date)  + 15) + 'px')
               .style('opacity', '1')
